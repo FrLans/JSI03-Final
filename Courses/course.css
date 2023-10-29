@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  /* width */
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  /* Track */
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  /* Handle */
+  background: rgb(121, 121, 255);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  /* Handle on hover */
+  background: rgb(78, 78, 255);
+}
+::-webkit-scrollbar-track-piece {
+  /* not handle on */
+  background: rgb(185, 200, 255);
+}
+#menuBar1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  z-index: 99;
+  height: 70px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 82.3vw;
+}
+#menuBar2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  z-index: 99;
+  height: 70px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 17.7vw;
+}
+#menuBar1 li {
+  display: inline;
+  float: left;
+  font-family: "Typo Round Regular Demo";
+  font-size: 35px;
+}
+#menuBar2 li {
+  display: inline;
+  float: right;
+  font-family: "Typo Round Regular Demo";
+  font-size: 35px;
+}
+#menuBar1 i {
+  padding-top: 15px;
+  padding-left: 40px;
+}
+#menuBar1 i:hover,
+#menuBar2 i:hover {
+  filter: brightness(0.5);
+}
+#menuBar2 i {
+  padding-top: 15px;
+  padding-right: 40px;
+}
+#logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  height: 70px;
+}
+#padding {
+  height: 70px;
+  width: 100%;
+  z-index: 0;
+}
+.courseHolder {
+  display: flex;
+  flex-wrap: wrap;
+}
+.course {
+  margin: 10px;
+  border: 5px solid #ffc400;
+  background-color: rgba(255, 179, 0, 0.174);
+  border-radius: 20px;
+}
+.course_inner {
+  height: 410px;
+  width: 315px;
+}
+.course_inner img {
+  margin: 10px;
+  height: 200px;
+  width: 293.75px;
+  border-radius: 7px;
+}
+.coursePreview {
+  display: inline;
+  font-family: "Roboto";
+}
+.course_inner i {
+  width: 20px;
+  margin: 10px;
+}
+.courseName {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.subscribe0,
+.subscribe1,
+.subscribe2 {
+  width: 115px;
+  height: 35px;
+  border: 3px solid #ffc400;
+  font-family: Roboto;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #ffc400;
+  color: black;
+  font-weight: bold;
+}
+.subscribe0 {
+  margin-left: 80px;
+}
+.subscribe1 {
+  margin-left: 0;
+}
+.subscribe2 {
+  margin-left: 20px;
+}
+.subscribe0:hover,
+.subscribe1:hover,
+.subscribe2:hover {
+  cursor: pointer;
+  background-color: white;
+}
