@@ -5,10 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://kit.fontawesome.com/62e14fb03a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div id="menuBarHolder">
+      <ul id="menuBar1">
+        <li>
+          <a href="/Final/index.html"
+            ><img
+              src="/Final/Images/logo.png"
+              alt=""
+              id="logo"
+              title="Trang chủ"
+          /></a>
+        </li>
+        <li>
+          <a href="/Final/Courses/course.html"
+            ><i
+              class="fa-solid fa-book-open"
+              style="color: #0070c0"
+              title="Khóa học mới"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="fa-solid fa-bookmark"
+              style="color: #0070c0"
+              title="Khóa học đã lưu"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="fa-solid fa-trophy"
+              style="color: #0070c0"
+              title="Thi đấu"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="fa-solid fa-comments"
+              style="color: #0070c0"
+              title="Diễn đàn"
+            ></i
+          ></a>
+        </li>
+      </ul>
+      <ul id="menuBar2">
+        <li>
+          <a href="#"
+            ><i
+              class="fa-solid fa-gear"
+              style="color: #0070c0"
+              title="Cài đặt"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i
+              class="fa-solid fa-money-check"
+              style="color: #0070c0"
+              title="Gói học viên"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="/Final/Login/login.html"
+            ><i
+              class="fa-solid fa-user"
+              style="color: #0070c0"
+              title="Tài khoản"
+            ></i
+          ></a>
+        </li>
+      </ul>
+    </div>
     <div class="loginbox" id="signupbox">
-      <p class="title" id="title">Sign up</p>
+      <p class="title" id="title">Đăng ký</p>
 
       <p class="rq" id="tk">Email:                 </p>
       <input type="email" id="emailSU" placeholder="Email" /><br />
@@ -18,23 +115,29 @@
 
       <p class="rq" id="mk">Password:     </p>
       <input type="password" id="passSU" placeholder="Password" /><br />
-      <button class="button-17 btn18" role="button" id="signup">Sign up</button
+      <button class="button-17 btn18" role="button" id="signup">Đăng ký</button
       ><br />
       <button class="button-17 btn18" role="button" id="changebtn1">
-        Have an account? Log in!
+        Đã có tài khoản? Đăng nhập!
       </button>
     </div>
     <div class="loginbox" id="loginbox">
-      <p class="title" id="title">Log in</p>
+      <p class="title" id="title">Đăng nhập</p>
 
       <p class="rq" id="tk">Email:                 </p>
       <input type="email" id="emailLI" placeholder="Email" /><br />
       <p class="rq" id="mk">Password:     </p>
       <input type="password" id="passLI" placeholder="Password" /><br />
-      <button class="button-17 btn18" role="button" id="login">Log in</button
+      <button class="button-17 btn18" role="button" id="login">Đăng nhập</button
       ><br />
       <button class="button-17 btn18" role="button" id="changebtn2">
-        Have no accounts? Sign up!
+        Chưa có tài khoản? Đăng ký!
+      </button>
+    </div>
+    <div class="loginbox" id="signoutbox">
+      <p class="title" id="title">Bạn đã đăng nhập</p>
+      <button class="button-17 btn18" role="button" id="changebtn3">
+        Đăng xuất
       </button>
     </div>
     <script type="module" src="./login.js"></script>

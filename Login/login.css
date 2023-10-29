@@ -2,6 +2,68 @@
 * {
   box-sizing: border-box;
 }
+#menuBar1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  z-index: 99;
+  height: 70px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 82.3vw;
+}
+#menuBar2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  z-index: 99;
+  height: 70px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  width: 17.7vw;
+}
+#menuBar1 li {
+  display: inline;
+  float: left;
+  font-family: "SVN-Product Sans";
+  font-size: 35px;
+}
+#menuBar2 li {
+  display: inline;
+  float: right;
+  font-family: "SVN-Product Sans";
+  font-size: 35px;
+}
+#menuBar1 i {
+  padding-top: 15px;
+  padding-left: 40px;
+}
+#menuBar1 i:hover,
+#menuBar2 i:hover {
+  filter: brightness(0.5);
+}
+#menuBar2 i {
+  padding-top: 15px;
+  padding-right: 40px;
+}
+#logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  height: 70px;
+}
 .loginbox {
   background-color: rgb(172, 198, 255);
   border-radius: 25px;
@@ -13,24 +75,29 @@
     rgba(34, 0, 255, 0.3) 0px 7px 13px -3px,
     rgba(17, 0, 255, 0.2) 0px -3px 0px inset;
   margin-left: 50%;
-  margin-top: 5%;
+  margin-top: 8%;
   transform: translate(-50%, 0%);
 }
 #signupbox {
-  height: 550px;
+  height: 520px;
   display: block;
 }
 #loginbox {
-  height: 480px;
+  height: 440px;
+  display: none;
+}
+#signoutbox {
+  height: 200px;
   display: none;
 }
 .title {
-  font-family: "Typo Round Regular Demo";
+  padding-top: 20px;
+  font-family: "SVN-Product Sans";
   font-size: 36px;
 }
 .rq {
   display: inline;
-  font-family: "Typo Round Regular Demo";
+  font-family: "SVN-Product Sans";
   font-size: 24px;
 }
 #emailSU,
@@ -63,7 +130,7 @@
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Typo Round Regular Demo";
+  font-family: "SVN-Product Sans";
   font-size: 24px;
   font-weight: 500;
   height: 67px;

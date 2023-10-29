@@ -46,6 +46,22 @@ change2.addEventListener("click", function () {
   signupbox.style.display = "block";
 });
 
+// Sign Out
+let initUser = localStorage.getItem("Current User");
+console.log(initUser);
+let signoutbox = document.getElementById("signoutbox");
+if (initUser != "" && initUser != null) {
+  loginbox.style.display = "none";
+  signupbox.style.display = "none";
+  signoutbox.style.display = "block";
+}
+let signOut = document.getElementById("changebtn3");
+signOut.addEventListener("click", function () {
+  localStorage.setItem("Current User", "");
+  localStorage.setItem("Test", "");
+  localStorage.setItem("tempCourses", JSON.stringify([]));
+  window.location.reload();
+});
 // sign up
 let signup = document.getElementById("signup");
 signup.addEventListener("click", function () {
@@ -56,13 +72,12 @@ signup.addEventListener("click", function () {
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed in
-      console.log(userCredential);
       const user = userCredential.user;
       set(ref(database, "users/" + user.uid), {
         username: username,
         email: email,
         courseType: 0,
-        registeredCourses: [],
+        registeredCourses: ["1", "2"],
       });
       alert("Tạo tài khoản thành công!");
     })
@@ -82,15 +97,15 @@ login.addEventListener("click", function () {
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
-
+      localStorage.setItem("Test", JSON.stringify(userCredential));
       onValue(ref(database, "users/" + user.uid), function (snap) {
         localStorage.setItem("Current User", snap.val().username);
       });
-      alert(
-        "Đăng nhập thành công! Chào mừng " +
-          localStorage.getItem("Current User")
-      );
-      window.location.href = "/Final/index.html";
+      // alert(
+      //   "Đăng nhập thành công! Chào mừng " +
+      //     localStorage.getItem("Current User")
+      // );
+      // window.location.href = "/Final/index.html";}
     })
     .catch((error) => {
       const errorCode = error.code;
