@@ -60,6 +60,11 @@ signOut.addEventListener("click", function () {
   localStorage.setItem("Current User", "");
   localStorage.setItem("Test", "");
   localStorage.setItem("tempCourses", JSON.stringify([]));
+  localStorage.setItem("Membership", "");
+  localStorage.setItem("Owner", "");
+  localStorage.setItem("Number", "");
+  localStorage.setItem("Expire", "");
+  localStorage.setItem("CVC", "");
   window.location.reload();
 });
 // sign up
@@ -77,14 +82,13 @@ signup.addEventListener("click", function () {
         username: username,
         email: email,
         courseType: 0,
-        registeredCourses: ["1", "2"],
+        registeredCourses: ["0"],
       });
       alert("Tạo tài khoản thành công!");
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-
       alert(errorMessage, errorCode);
     });
 });
@@ -100,16 +104,21 @@ login.addEventListener("click", function () {
       localStorage.setItem("Test", JSON.stringify(userCredential));
       onValue(ref(database, "users/" + user.uid), function (snap) {
         localStorage.setItem("Current User", snap.val().username);
+        localStorage.setItem("Membership", snap.val().courseType);
       });
-      // alert(
-      //   "Đăng nhập thành công! Chào mừng " +
-      //     localStorage.getItem("Current User")
-      // );
-      // window.location.href = "/Final/index.html";}
+    })
+    .then(() => {
+      setTimeout(function () {
+        alert(
+          "Đăng nhập thành công! Chào mừng " +
+            localStorage.getItem("Current User")
+        );
+        window.location.href = "/Final/index.html";
+      }, 2000);
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      alert(errorMessage);
+      alert(errorMessage, errorCode);
     });
 });

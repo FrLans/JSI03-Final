@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/Final/index.css" />
     <link rel="stylesheet" href="./course.css" />
     <script
       src="https://kit.fontawesome.com/62e14fb03a.js"
@@ -12,11 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Menu/Navigation Bar -->
     <div id="menuBarHolder">
       <ul id="menuBar1">
         <li>
@@ -38,22 +48,11 @@
           ></a>
         </li>
         <li>
-          <a href="#"
+          <a href="/Final/Blogs/blog.html"
             ><i
               class="fa-solid fa-comments"
               style="color: #0070c0"
               title="Diễn đàn"
-            ></i
-          ></a>
-        </li>
-      </ul>
-      <ul id="menuBar2">
-        <li>
-          <a href="#"
-            ><i
-              class="fa-solid fa-money-check"
-              style="color: #0070c0"
-              title="Gói học viên"
             ></i
           ></a>
         </li>
@@ -66,10 +65,55 @@
             ></i
           ></a>
         </li>
+        <li>
+          <a href="/Final/Money/money.html"
+            ><i
+              class="fa-solid fa-money-check"
+              style="color: #0070c0"
+              title="Gói học viên"
+            ></i
+          ></a>
+        </li>
       </ul>
     </div>
     <div id="padding"></div>
-    <div class="courseHolder"></div>
-    <script src="./course.js" type="module"></script>
+    <p class="courseSectName">
+      Khoá học đã đăng ký --------------------------------------------
+    </p>
+    <div class="courseHolder1"></div>
+    <br />
+    <p class="courseSectName">
+      Khoá học mới ---------------------------------------------------
+    </p>
+    <div class="courseHolder2"></div>
+    <br />
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://github.com/FrLans/JSI03-Final"
+            ><i class="icon ion-social-github"></i
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100095708431516"
+            ><i class="icon ion-social-facebook"></i></a
+          ><a href="mailto: hvvietanh@outlook.com"
+            ><i class="icon ion-android-mail"></i
+          ></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="/Final/index.html">Trang chủ</a>
+            <a href="/Final/Contact/contact.html">Liên hệ</a>
+            <a href="/Final/Courses/course.html">Khoá học</a>
+            <a href="/Final/Blogs/blog.html">Diễn đàn</a>
+            <a href="/Final/Login/login.html">Tài khoản</a>
+            <a href="/Final/Money/money.html">Thanh toán</a>
+          </li>
+        </ul>
+        <p class="copyright">mindY Technology Academy © 2023</p>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./course.js"></script>
   </body>
 </html>

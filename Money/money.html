@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Final/index.css" />
+    <link rel="stylesheet" href="./money.css" />
+    <script
+      src="https://kit.fontawesome.com/62e14fb03a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Menu/Navigation Bar -->
+    <div id="menuBarHolder">
+      <ul id="menuBar1">
+        <li>
+          <a href="/Final/index.html"
+            ><img
+              src="/Final/Images/logo.png"
+              alt=""
+              id="logo"
+              title="Trang chủ"
+          /></a>
+        </li>
+        <li>
+          <a href="/Final/Courses/course.html"
+            ><i
+              class="fa-solid fa-book-open"
+              style="color: #0070c0"
+              title="Khóa học"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="/Final/Blogs/blog.html"
+            ><i
+              class="fa-solid fa-comments"
+              style="color: #0070c0"
+              title="Diễn đàn"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="/Final/Login/login.html"
+            ><i
+              class="fa-solid fa-user"
+              style="color: #0070c0"
+              title="Tài khoản"
+            ></i
+          ></a>
+        </li>
+        <li>
+          <a href="/Final/Money/money.html"
+            ><i
+              class="fa-solid fa-money-check"
+              style="color: #0070c0"
+              title="Gói học viên"
+            ></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <div class="padding"></div>
+    <div class="checkoutdiv" id="cDiv">
+      <div class="checkoutTop">
+        <p id="date">Thời gian giảm 50% giá đăng kí hội viên còn</p>
+        <p id="checkouttext1">Bạn hiện đang sử dụng tài khoản miễn phí.</p>
+        <p id="checkouttext2">
+          Tiếp tục điền thông tin tài khoản để mua tài khoản Hội viên Tiêu chuẩn
+          với giá 400.000 VNĐ.
+        </p>
+      </div>
+      <br />
+      <br />
+      <div class="checkoutLeft">
+        <p id="checkouttext3">Chủ thẻ:</p>
+
+        <p id="checkouttext4">Số thẻ:</p>
+
+        <p id="checkouttext5">Ngày hết hạn:</p>
+
+        <p id="checkouttext6">Mã xác nhận:</p>
+      </div>
+      <div class="checkoutRight">
+        <input id="cOwner" type="text" placeholder="James Smith" />
+
+        <input
+          id="cNumber"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9\s]{19}"
+          autocomplete="cc-number"
+          minlength="19"
+          maxlength="19"
+          placeholder="xxxx xxxx xxxx xxxx"
+        />
+
+        <input
+          id="cExpire"
+          type="text"
+          placeholder="mm yyyy"
+          minlength="7"
+          maxlength="7"
+        />
+
+        <input
+          id="cCVC"
+          type="tel"
+          inputmode="numeric"
+          pattern="[0-9]{3}"
+          minlength="3"
+          maxlength="3"
+          placeholder="xxx"
+        />
+      </div>
+      <div class="checkoutBottom">
+        <button id="checkoutreal">Thanh toán</button>
+      </div>
+    </div>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://github.com/FrLans/JSI03-Final"
+            ><i class="icon ion-social-github"></i
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100095708431516"
+            ><i class="icon ion-social-facebook"></i></a
+          ><a href="mailto: hvvietanh@outlook.com"
+            ><i class="icon ion-android-mail"></i
+          ></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="/Final/index.html">Trang chủ</a>
+            <a href="/Final/Contact/contact.html">Liên hệ</a>
+            <a href="/Final/Courses/course.html">Khoá học</a>
+            <a href="/Final/Blogs/blog.html">Diễn đàn</a>
+            <a href="/Final/Login/login.html">Tài khoản</a>
+            <a href="/Final/Money/money.html">Thanh toán</a>
+          </li>
+        </ul>
+        <p class="copyright">mindY Technology Academy © 2023</p>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./money.js"></script>
+  </body>
+</html>
